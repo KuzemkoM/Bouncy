@@ -21,8 +21,8 @@
   border: 2px solid $border;
 
   &:hover, &:focus{
-    background: $border;
     color: $active-text;
+    background: #F3F3F3;
   }
 
   &:active{
@@ -33,7 +33,7 @@
 @mixin a-hover($hover-text){
   text-decoration: underline;
   color: $hover-text;
-  @include transition(all, 0.5s, ease);
+  @include transition(all, 0.3s, ease);
 
   &:hover, &:active, &:focus{
     opacity: 0.8;
@@ -41,10 +41,3 @@
   }
 }
 
-@mixin form-elem{
-  outline: none;
-
-  &:hover, &:focus{
-    color: #ccc;
-  }
-}

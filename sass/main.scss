@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:300,300i');
 @import "../libs/css/bootstrap.min.css";
-@import "normalize";
 @import "variables";
 @import "mixin";
 
@@ -38,7 +37,7 @@ button {
 
 button:hover {
 	@include btn-hover;
-	@include transition(all, 0.5s, ease);
+	@include transition(all, 0.3s, ease);
 }
 
 p {
@@ -51,10 +50,7 @@ p {
 	width: 100%;
 }
 
-.info {
-	width: 50%;
-}
-
+/* Main slide */
 .logo {
     display: inline-block;
     float: left;
@@ -112,7 +108,6 @@ p {
 
 .eclipse {
 	margin-top: 200px;
-	margin-left: 50%;
 }
 
 .button {
@@ -124,7 +119,7 @@ p {
 
 .button:hover {
 	border-bottom: 2px solid #8ddac9;
-	@include transition(all, 0.5s, ease);
+	@include transition(all, 0.3s, ease);
 }
 
 .button-group {
@@ -139,18 +134,17 @@ p {
 
 
 /* Masonry grid styles */
-img{
-	display: block;
+.grid-item img {
+	max-width: 100%;
 }
 
-.grid-item{
-	margin-bottom: 10px;
-	margin-right: 5px;
-}
- 
-.grid-item-size,
+.grid-sizer,
 .grid-item {
 	width: 24%;
+}
+
+.grid-item {
+	margin-bottom: 10px;
 }
 
 /* Team */
@@ -166,6 +160,7 @@ img{
 	}
 }
 
+/* Love */
 .love {
 	background: url(../img/bg-2.png) no-repeat center center;
 	background-size: cover; 
@@ -181,6 +176,7 @@ img{
 	}
 }
 
+/* Monials */
 #monials {
 	background: #f3f3f3;
 	padding-top: 50px;
@@ -200,7 +196,6 @@ img{
 	}
 }
 
-
 .mon-slide {
 	padding: 50px 25px;
 
@@ -214,8 +209,10 @@ img{
 	font-weight: 700;
 }
 
+/* Contact */
 #map {
 	min-height: 300px;
+	width: 100%;
 }
 
 .contact-head {
@@ -231,6 +228,11 @@ img{
 	max-width: 100px;
 	padding-bottom: 20px; 
 }
+
+.fa {
+	cursor: pointer;
+}
+
 /*Responsive menu*/
 #show-menu{
 	float:  right;

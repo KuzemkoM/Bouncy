@@ -38,8 +38,8 @@ var $grid = $('.grid').isotope({
   itemSelector: '.grid-item',
   percentPosition: true,
   masonry: {
-    columnWidth: '.grid-item-size',
-    gutter: 10
+    columnWidth: '.grid-sizer',
+    gutter: 10,
   }
 })
 
